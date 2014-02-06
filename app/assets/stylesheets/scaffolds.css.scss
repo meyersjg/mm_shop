@@ -67,3 +67,23 @@ div {
     list-style: square;
   }
 }
+
+.navlinks {
+  text-align: center;
+  display: inline;
+  float: right;
+  font-size: 20px;
+}
+
+.title {
+  display: inline;
+}
+
+.container {
+  margin-bottom: 30px;
+}
+
+footer {
+  height: 50px;
+  border-top: 1px solid black;
+}

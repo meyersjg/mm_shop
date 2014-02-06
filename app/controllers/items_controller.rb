@@ -17,10 +17,6 @@ class ItemsController < ApplicationController
     @item = Item.new
   end
 
-  # GET /items/1/edit
-  def edit
-  end
-
   # POST /items
   # POST /items.json
   def create
@@ -48,16 +44,6 @@ class ItemsController < ApplicationController
         format.html { render action: 'edit' }
         format.json { render json: @item.errors, status: :unprocessable_entity }
       end
-    end
-  end
-
-  # DELETE /items/1
-  # DELETE /items/1.json
-  def destroy
-    @item.destroy
-    respond_to do |format|
-      format.html { redirect_to items_url }
-      format.json { head :no_content }
     end
   end
 
