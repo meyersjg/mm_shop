@@ -1,4 +1,5 @@
 body {
+  max-width: 1140px;
   background-color: #fff;
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
@@ -67,3 +68,116 @@ div {
     list-style: square;
   }
 }
+
+.navlinks {
+  text-align: center;
+  display: inline;
+  float: right;
+  font-size: 20px;
+}
+
+.title {
+  display: inline;
+}
+
+.container {
+  margin-bottom: 30px;
+}
+
+.navbar {
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+table {
+  margin-left: 40px;
+}
+
+.dropcart {
+  height: 300px;
+  background: red;
+  display: inline-block;
+  float: right;
+}
+
+footer {
+  height: 50px;
+  border-top: 1px solid black;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.item {
+  display: inline-block;
+  margin-top: 10px;
+  box-shadow: 2px 2px 2px 2px blue;
+  height: 200px;
+  position: relative;
+  float: left;
+}
+
+
+$colwidth: 75px;
+$colgutter: 20px;
+
+.col1 {
+  width: $colwidth;
+  margin-right: $colgutter;
+}
+
+.col2 {
+  width: $colwidth * 2;
+  margin-right: $colgutter;
+}
+
+.col3 {
+  width: $colwidth * 3;
+  margin-right: $colgutter;
+}
+
+.col4 {
+  width: $colwidth * 4;
+  margin-right: $colgutter;
+}
+
+.col5 {
+  width: $colwidth * 5;
+  margin-right: $colgutter;
+}
+
+.col6 {
+  width: $colwidth * 6;
+  margin-right: $colgutter;
+}
+
+.col7 {
+  width: $colwidth * 7;
+  margin-right: $colgutter;
+}
+
+.col8 {
+  width: $colwidth * 8;
+  margin-right: $colgutter;
+}
+
+.col9 {
+  width: $colwidth * 9;
+  margin-right: $colgutter;
+}
+
+.col10 {
+  width: $colwidth * 10;
+  margin-right: $colgutter;
+}
+
+.col11 {
+  width: $colwidth * 11;
+  margin-right: $colgutter;
+}
+
+.col12 {
+  width: $colwidth * 12;
+  margin-right: $colgutter;
+}
+
