@@ -1,15 +1,19 @@
+<div class="container">
+  <table>
+    <tbody>
+      <% @items.each do |item| %>
+        <tr class="item col3">
+          <td><%= item.name %></td>
+          <td><%= item.picture %></td>
+          <td>$<%= item.cost %></td>
+          <td>Description: <%= item.description %></td>
+          <td> Item #: <%= item.item_number %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 
-<table>
-  <tbody>
-    <% @items.each do |item| %>
-      <tr class="items col4">
-        <td><%= item.name %></td>
-        <td><%= item.picture %></td>
-        <td><%= item.cost %></td>
-        <td><%= item.description %></td>
-        <td><%= item.item_number %></td>
-        <td><%= link_to 'Show', item %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+  <div class="dropcart col3">
+
+  </div>
+</div>
