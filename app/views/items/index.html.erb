@@ -1,33 +1,15 @@
 
-
 <table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Picture</th>
-      <th>Cost</th>
-      <th>Description</th>
-      <th>Item number</th>
-      <th>Cart</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-
   <tbody>
     <% @items.each do |item| %>
-      <tr>
+      <tr class="items col4">
         <td><%= item.name %></td>
         <td><%= item.picture %></td>
         <td><%= item.cost %></td>
         <td><%= item.description %></td>
         <td><%= item.item_number %></td>
-        <td><%= item.cart_id %></td>
         <td><%= link_to 'Show', item %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
-<br>
