@@ -1,19 +1,21 @@
 <div class="container">
-  <table>
-    <tbody>
-      <% @items.each do |item| %>
-        <tr class="item col3">
-          <td><%= item.name %></td>
-          <td><%= item.picture %></td>
-          <td>$<%= item.cost %></td>
-          <td>Description: <%= item.description %></td>
-          <td> Item #: <%= item.item_number %></td>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
 
-  <div class="dropcart col3">
+  <div class="dropcart">
 
   </div>
+
+  <% @items.each do |item| %>
+    <div class="col4">
+      <div class="item_pic">
+
+        <%= image_tag("/assets/products/#{item.picture}") %>
+        <h3><%= item.name %></h3>
+        <p>$<%= item.cost %> </p>
+
+      </div>
+
+    </div>
+
+  <% end %>
+
 </div>

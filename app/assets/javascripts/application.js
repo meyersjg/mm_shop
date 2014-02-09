@@ -14,3 +14,23 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(function () {
+    $( ".item" ).draggable({
+        helper: "clone"
+    });
+
+    $( ".dropcart" ).droppable({
+        activeClass: "droppable",
+        hoverClass: "hover",
+        tolerance: "touch",
+        drop: function( event, ui ) {
+      var url = ui.draggable.find("a.add").attr("li")
+      var successFunction = function() {
+    alert("Item added to cart")
+      };
+      $.post(url, successFunction)
+
+        }
+    });
+});

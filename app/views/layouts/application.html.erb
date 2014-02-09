@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>MmShop</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>MmShop</title>
+    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+   <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Rambla|Arvo' rel='stylesheet' type='text/css'>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
 
-  <div class="container">
-    <div class="navbar">
-      <header>
-        <h1 class="title">
-          Meyers and Mian's Random Store
-        </h1>
-        <div class="navlinks">
-          <a href="#">Food</a>
-          <a href="#">Clothing</a>
-          <a href="#">Other Random Stuff</a>
-          <a href="#">Your Cart</a>
-        </div>
-      </header>
+    <div class="container">
+      <div class="navbar">
+        <header>
+          <h1 class="title">
+            Meyers and Mian's Random Store
+          </h1>
+          <div class="navlinks">
+            <a href="#">Food</a>
+            <a href="#">Clothing</a>
+            <a href="#">Other Random Stuff</a>
+            <a href="#">Your Cart</a>
+          </div>
+        </header>
+      </div>
     </div>
-  </div>
 
-<%= yield %>
+  <%= yield %>
 
-  <div class="container">
-    <footer>
-      <p class="footerlinks">
-        <a href="#">Contact</a>
-        <a href="#">Terms and Conditions</a>
-        <a href="#">Careers</a>
-      </p>
-    </footer>
-  </div>
+    <div class="container">
+      <footer class="container">
+        <p class="footerlinks">
+          <a href="#">Contact</a>
+          <a href="#">Terms and Conditions</a>
+          <a href="#">Careers</a>
+        </p>
+      </footer>
+    </div>
 
-</body>
+  </body>
 </html>

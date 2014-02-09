@@ -5,6 +5,7 @@ body {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  margin-left: 60px;
 }
 
 p, ol, ul, td {
@@ -78,20 +79,21 @@ div {
 
 .title {
   display: inline;
+  font-family: 'Rambla', serif;
+  font-size: 40px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 .container {
-  margin-bottom: 30px;
+  margin: 20px 0px 20px 50px;
 }
 
 .navbar {
   border-bottom: 1px solid black;
   padding-bottom: 10px;
   padding-top: 10px;
-}
-
-table {
-  margin-left: 40px;
+  font-family: 'Rambla', serif;
 }
 
 .dropcart {
@@ -99,6 +101,7 @@ table {
   background: red;
   display: inline-block;
   float: right;
+  position: fixed;
 }
 
 footer {
@@ -108,76 +111,88 @@ footer {
   text-align: center;
 }
 
+li.item {
+  left: 140px;
+  list-style: none;
+}
 .item {
   display: inline-block;
   margin-top: 10px;
-  box-shadow: 2px 2px 2px 2px blue;
+  box-shadow: 2px 2px 2px 2px gray;
   height: 200px;
   position: relative;
-  float: left;
+  width: 300px;
+  border-radius: 5%;
+  font-family: 'Rambla', serif;
+  background-color: #ccc;
 }
 
+// Grid
 
-$colwidth: 75px;
-$colgutter: 20px;
+$col-width: 80px;
+$gutter: 20px;
 
 .col1 {
-  width: $colwidth;
-  margin-right: $colgutter;
+  width: $col-width;
+  margin-right: $gutter;
 }
 
 .col2 {
-  width: $colwidth * 2;
-  margin-right: $colgutter;
+  width: $col-width*2;
+  margin-right: $gutter;
+  display: inline-block;
 }
-
 .col3 {
-  width: $colwidth * 3;
-  margin-right: $colgutter;
+  width: $col-width*3;
+  margin-right: $gutter;
 }
-
 .col4 {
-  width: $colwidth * 4;
-  margin-right: $colgutter;
+  width: $col-width*4 + $gutter;
+  margin-right: $gutter;
+  display: inline-block;
 }
-
 .col5 {
-  width: $colwidth * 5;
-  margin-right: $colgutter;
+  width: $col-width*5;
+  margin-right: $gutter;
 }
-
 .col6 {
-  width: $colwidth * 6;
-  margin-right: $colgutter;
+  width: $col-width*6 + $gutter * 2;
+  margin-right: $gutter;
+  display: inline-block;
 }
-
 .col7 {
-  width: $colwidth * 7;
-  margin-right: $colgutter;
+  width: $col-width*7;
+  margin-right: $gutter;
 }
-
 .col8 {
-  width: $colwidth * 8;
-  margin-right: $colgutter;
+  width: $col-width*8;
+  margin-right: $gutter;
 }
-
 .col9 {
-  width: $colwidth * 9;
-  margin-right: $colgutter;
+  width: $col-width*9;
+  margin-right: $gutter;
 }
-
 .col10 {
-  width: $colwidth * 10;
-  margin-right: $colgutter;
+  width: $col-width*10;
+  margin-right: $gutter;
 }
-
 .col11 {
-  width: $colwidth * 11;
-  margin-right: $colgutter;
+  width: $col-width*11;
+  margin-right: $gutter;
+}
+.col12 {
+  width: $col-width*12;
+  margin-right: $gutter;
 }
 
-.col12 {
-  width: $colwidth * 12;
-  margin-right: $colgutter;
+.item_pic {
+  width: $col-width*4;
+  height: $col-width*2;
+  display: inline-block;
+  margin-top: 10px;
+  box-shadow: 2px 2px 2px 2px gray;
+  position: relative;
+  border-radius: 5%;
+  font-family: 'Rambla', serif;
 }
 
