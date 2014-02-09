@@ -25,12 +25,8 @@ $(function () {
         hoverClass: "hover",
         tolerance: "touch",
         drop: function( event, ui ) {
-      var url = ui.draggable.find("a.add").attr("li")
-      var successFunction = function() {
-    alert("Item added to cart")
-      };
-      $.post(url, successFunction)
-
+          var listObj = $(this).find('ul');
+          listObj.append(ui.draggable.clone());
         }
     });
 });

@@ -5,13 +5,13 @@
   </div>
 
   <% @items.each do |item| %>
-    <div class="col4">
+    <div class="item col4">
       <div class="item_pic">
 
-        <%= image_tag("/assets/products/#{item.picture}") %>
+        <%= image_tag("/assets/images/products/#{item.picture}") %>
         <h3><%= item.name %></h3>
         <p>$<%= item.cost %> </p>
-
+        <%= button_to 'Add to cart', line_items_path(item_id: item) %>
       </div>
 
     </div>

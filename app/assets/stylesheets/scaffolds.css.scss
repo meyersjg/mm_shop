@@ -1,11 +1,9 @@
 body {
-  max-width: 1140px;
   background-color: #fff;
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
-  margin-left: 60px;
 }
 
 p, ol, ul, td {
@@ -97,11 +95,13 @@ div {
 }
 
 .dropcart {
-  height: 300px;
+  height: 50px;
   background: red;
-  display: inline-block;
-  float: right;
-  position: fixed;
+
+  .dropcart.hover {
+    border: 2px dashed black;
+  }
+
 }
 
 footer {
@@ -114,17 +114,6 @@ footer {
 li.item {
   left: 140px;
   list-style: none;
-}
-.item {
-  display: inline-block;
-  margin-top: 10px;
-  box-shadow: 2px 2px 2px 2px gray;
-  height: 200px;
-  position: relative;
-  width: 300px;
-  border-radius: 5%;
-  font-family: 'Rambla', serif;
-  background-color: #ccc;
 }
 
 // Grid
@@ -189,10 +178,10 @@ $gutter: 20px;
   width: $col-width*4;
   height: $col-width*2;
   display: inline-block;
+  background-color: white;
   margin-top: 10px;
   box-shadow: 2px 2px 2px 2px gray;
   position: relative;
   border-radius: 5%;
   font-family: 'Rambla', serif;
 }
-
